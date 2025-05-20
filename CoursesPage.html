@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursec-page</title>
+    <link rel="stylesheet" href="src/all.css">
+    <link rel="stylesheet" href="src/input.css">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="icon" href="img/icon.png!w700wp">
+</head>
+<body class="bg-gradient-to-r from-[#eee] to-[#777]" id="body">
+    <!-- header -->
+    <header class="text-teal-600 bg-gradient-to-r px-[30px] md:px-[100px] from-black to-gray-900 h-20 flex justify-between items-center border-b-2 border-amber-50 ">
+        <h1 title="يمكنك تغيير العنوان🖊️" id="myHeading" contenteditable="true" class="flex flex-wrap text-xl sm:text-3xl md:text-4xl font-bold space-x-1 ">
+            <span class="letter" style="animation-delay: 0ms">C</span>
+            <span class="letter" style="animation-delay: 100ms">o</span>
+            <span class="letter" style="animation-delay: 200ms">u</span>
+            <span class="letter" style="animation-delay: 300ms">r</span>
+            <span class="letter" style="animation-delay: 400ms">s</span>
+            <span class="letter" style="animation-delay: 500ms">e</span>
+            <span class="letter" style="animation-delay: 600ms">s</span>
+            <span class="letter" style="animation-delay: 700ms"> </span>
+            <span class="letter" style="animation-delay: 800ms">A</span>
+            <span class="letter" style="animation-delay: 900ms">c</span>
+            <span class="letter" style="animation-delay: 1000ms">a</span>
+            <span class="letter" style="animation-delay: 1100ms">d</span>
+            <span class="letter" style="animation-delay: 1200ms">e</span>
+            <span class="letter" style="animation-delay: 1200ms">m</span>
+            <span class="letter" style="animation-delay: 1200ms">y</span>
+        </h1>
+        <div class="flex items-center gap-5">
+            <a href="#content" title="products cart"><i class="fas fa-shopping-cart fa-solid fa-bars cursor-pointer text-xl md:text-3xl transition-all hover:scale-[1.2] text-amber-500"></i></a>
+            <a href="index.html" class="cursor-pointer text-1xl md:text-2xl text-center  px-2 md:px-3 rounded-2xl outline-2 outline-amber-50 transition-all hover:outline-teal-500 text-teal-50 hover:text-teal-400 group"><i class="fa-solid fa-arrow-right transition-all duration-[1.5s] translate-x-[-5px] group-hover:translate-x-[30%] text-1xl md:text-2xl ml-[8px]"></i></a>
+        </div>
+        <input title="Search Your Product" type="search" id="search" class="bg-teal-900 w-[100%] h-[40px] text-amber-500 px-[100px] font-bold placeholder:text-amber-500 placeholder:font-bold transition-all duration-300 focus:outline-none absolute top-[4.9rem] left-0 caret-amber-600 text-xl md:text-2xl" placeholder="Search...🔍" dir="auto">
+    </header>
+
+    <!-- web sites section -->
+    <section class="pt-[3rem] mt-[3rem]">
+        <div class="hidden px-[2rem]" id="notFound">
+            <div class="bg-white flex flex-col mx-auto items-center justify-center border-4 border-red-700 text-center p-8 rounded-2xl shadow-lg max-w-3xl">
+                <img src="img/notfound.png" alt="Not Found Icon" class="w-25 mx-auto mb-4">
+                <h2 class="text-xl font-bold text-gray-800 mb-2">عذرًا، المنتج غير موجود</h2>
+                <p class="text-gray-500 mb-6">لم نتمكن من العثور على المنتج الذي تبحث عنه.</p>
+            </div>
+        </div>
+        <h2 class="text-3xl md:text-4xl text-center font-bold text-teal-900 group  relative" id="programming">{Programming Courses}</h2>
+        <h3 class="sectionTitle text-center text-3xl my-[2rem] capitalize text-amber-500 font-bold bg-teal-900 w-[fit-content] mx-auto px-[2rem] rounded-bl-3xl rounded-tr-3xl transition-all duration-[1s] hover:rounded-bl-[0] hover:rounded-tr-[0] hover:rounded-br-3xl hover:rounded-tl-3xl">web sites <i class="fas fa-globe text-teal-400"></i></h3>
+        <!-- parent-web  -->
+        <div class="parent card_web mt-5 w-[80%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+            <!-- card-1 for web  -->  
+            <div class="box capitalize h-[300px] front-bg p-4 rounded-tr-[40%] rounded-bl-[30%] transition-all duration-[1s] hover:rounded-bl-[0] hover:rounded-tr-[0] hover:rounded-br-[30%] hover:rounded-tl-[40%] shadow-md shadow-amber-500 flex justify-center items-center relative group">
+                <div class="text-white text-center">
+                    <h4 class=" text-3xl font-bold text-teal-500">Front End</h4>
+                    <p class="my-3 text-xl text-amber-500">Front End Development</p>
+                    <p class="text-xl">$500</p> 
+                    <button price="500"class="capitalize my-5 px-[30px] py-[7px] text-teal-900 font-bold rounded-2xl cursor-pointer transition-all duration-[.5s] outline-3 outline-teal-950 hover:bg-teal-900 hover:outline-gray-200 hover:text-white bg-gray-200">buy now</button>
+                    <p title="Enter See Details" class="details_btn z-[2000] relative text-teal-500 font-bold cursor-pointer">Details <i class="fa-solid fa-angle-up text-amber-500 details_icon"></i></p>
+                    <div class="overlay_details text-gray-300 justify-center hidden items-center  w-[65%] h-[65%] bg-[#090808] border-5 border-teal-500 absolute top-9 left-15 rounded-tr-[40%] rounded-bl-[30%] transition-all duration-[1s] group-hover:rounded-bl-[0] group-hover:rounded-tr-[0] group-hover:rounded-br-[30%] group-hover:rounded-tl-[40%] shadow-md shadow-amber-200">
+                        <ul>
+                            <li class="underline text-xl mb-2 text-amber-500">use the course</li>
+                            <li>html <i class="fa-brands fa-html5 text-orange-600"></i></li>
+                            <li>css <i class="fa-brands fa-css3-alt text-blue-500"></i></li>
+                            <li>tailwind <i class="fa-solid fa-wind text-sky-400"></i></li>
+                            <li>js <i class="fa-brands fa-js text-yellow-500"></i></li>
+                            <li>react <i class="fa-brands fa-react text-cyan-500"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- card-2 for web  -->
+            <div class="box capitalize h-[300px] back-bg p-4 rounded-tr-[40%] rounded-bl-[30%] transition-all duration-[1s] hover:rounded-bl-[0] hover:rounded-tr-[0] hover:rounded-br-[30%] hover:rounded-tl-[40%] shadow-md shadow-amber-500 flex justify-center items-center relative group">
+                <div class="text-white text-center">
+                    <h4 class=" text-3xl font-bold text-teal-500 ">Back End</h4>
+                    <p class="my-3 text-xl text-amber-500">Back End Development</p>
+                    <p class="text-xl">$300</p> 
+                    <button price="300" class="capitalize my-5 px-[30px] py-[7px] text-teal-900 font-bold rounded-2xl cursor-pointer transition-all duration-[.5s] outline-3 outline-teal-950 hover:bg-teal-900 hover:outline-gray-200 hover:text-white bg-gray-200">buy now</button>
+                    <p title="Enter See Details" class="details_btn  text-teal-500 font-bold cursor-pointer">Details <i class="fa-solid fa-angle-up text-amber-500 details_icon"></i></p>
+                    <div class="overlay_details text-gray-300 justify-center hidden items-center  w-[65%] h-[65%] bg-[#090808] border-5 border-teal-500 absolute top-9 left-15 rounded-tr-[40%] rounded-bl-[30%] transition-all duration-[1s] group-hover:rounded-bl-[0] group-hover:rounded-tr-[0] group-hover:rounded-br-[30%] group-hover:rounded-tl-[40%] shadow-md shadow-amber-200">
+                        <ul>
+                            <li class="underline text-xl mb-2 text-amber-500">use the course</li>
+                            <li>html <i class="fa-brands fa-html5 text-orange-600"></i></li>
+                            <li>css <i class="fa-brands fa-css3-alt text-blue-500"></i></li>
+                            <li>php <i class="fa-solid fa-code text-purple-600"></i></li>
+                            <li>node_js <i class="fa-brands fa-node-js text-green-600"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- card-3 for web  -->
+            <div class="box capitalize h-[300px] full-stack-bg p-4 rounded-tr-[40%] rounded-bl-[30%] transition-all duration-[1s] hover:rounded-bl-[0] hover:rounded-tr-[0] hover:rounded-br-[30%] hover:rounded-tl-[40%] shadow-md shadow-amber-500 flex justify-center items-center relative group">
+                <div class="text-white text-center">
+                    <h4 class=" text-3xl font-bold text-teal-500 ">Full Stack</h4>
+                    <p class="my-3 text-xl text-amber-500">Full Stack Development</p>
+                    <p class="text-xl">$800</p> 
+                    <button price="800" class="capitalize my-5 px-[30px] py-[7px] text-teal-900 font-bold rounded-2xl cursor-pointer transition-all duration-[.5s] outline-3 outline-teal-950 hover:bg-teal-900 hover:outline-gray-200 hover:text-white bg-gray-200">buy now</button>
+                    <p title="Enter See Details" class="details_btn  text-teal-500 font-bold cursor-pointer">Details <i class=" fa-solid fa-angle-up text-amber-500 details_icon" ></i></p>
+                    <div class="overlay_details text-gray-300 justify-center hidden items-center  w-[65%] h-[65%] bg-[#090808] border-5 border-teal-500 absolute top-9 left-15 rounded-tr-[40%] rounded-bl-[30%] transition-all duration-[1s] group-hover:rounded-bl-[0] group-hover:rounded-tr-[0] group-hover:rounded-br-[30%] group-hover:rounded-tl-[40%] shadow-md shadow-amber-200">
+                        <ul>
+                            <li class="underline text-xl mb-2 text-amber-500">use the course</li>
+                            <li>front end content <i class="fa-solid fa-laptop-code text-green-700"></i></li>
+                            <li>back end content <i class="fa-solid fa-server text-red-700"></i></li>
+                            <li>seo <i class="fa-solid fa-chart-line text-emerald-500"></i></li>
+                            <li>data base <i class="fa-solid fa-database text-indigo-500"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- application section  -->
+     <section class="pt-[3rem]">
+        <h3 class="sectionTitle text-center text-3xl mt-[2rem] mb-[4rem] capitalize text-teal-500 font-bold bg-black w-[fit-content] mx-auto px-[2rem] py-1 rounded-bl-3xl rounded-tr-3xl transition-all duration-[1s] hover:rounded-bl-[0] hover:rounded-tr-[0] hover:rounded-br-3xl hover:rounded-tl-3xl">applications <i class="fas fa-mobile-alt text-amber-500"></i></h3>
+        <!-- parent-app  -->
+        <div class="parent card_app grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto p-4 ">
+            <!-- Card-1 for app-->
+            <div class="box relative bg-white rounded-xl flex flex-col shadow-md shadow-gray-900 group overflow-hidden">
+                <img src="img/main-4.jpg" alt="Mobile App Course" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-xl font-semibold">Mobile App</h4>
+                    <p class="text-gray-600 text-sm mt-1">Learn to build Android & iOS apps using Flutter.</p>
+                    <div class="flex items-center justify-between mt-3">
+                        <span class="text-amber-500 font-bold text-base" >$400</span>
+                        <p title="Enter See Details" class="details_btn text-teal-500 font-bold cursor-pointer">Details <i class="fa-solid fa-angle-up text-amber-500 details_icon"></i></p>
+                    </div>
+                    <button price="400" class=" bg-teal-600 capitalize cursor-pointer mt-[.8rem] w-[100%] text-white text-center text-sm px-3 py-2 rounded hover:bg-teal-800 transition">buy now</button>
+                </div>
+                <div class="overlay_details absolute capitalize top-[-6rem] left-0 bg-black w-[100%] h-[0] text-white transition-all duration-[.7s] flex flex-col items-center justify-center text-center text-sm">
+                    <ul class="space-y-1 text-gray-300">
+                        <li class="underline text-xl my-[1.5rem] text-teal-500">use the course</li>
+                        <li>dart <i class="text-lg fa-brands fa-nfc-symbol text-blue-400"></i></li>
+                        <li>Flutter <i class="text-lg fa-brands fa-google text-green-600"> </i></li>
+                        <li>Android Studio <i class="text-lg fa-brands fa-android text-green-700"></i></li>
+                        <li>Xcode <i class="text-lg fa-brands fa-apple text-gray-700"></i></li>
+                        <li>Firebase <i class="text-lg fa-solid fa-fire-flame-curved text-red-500"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Card-2 for app -->
+            <div class="box relative flex flex-col bg-white rounded-xl shadow-md shadow-amber-900 group overflow-hidden">
+                <img src="img/main-1.jpg" alt="Mobile App Course" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-xl font-semibold">DESIGN UI/UX</h4>
+                    <p class="text-gray-600 text-sm mt-1">Design stunning app interfaces with Figma & XD.</p>
+                    <div class="flex items-center justify-between mt-3">
+                        <span class="text-amber-500 font-bold text-base">$350</span>
+                        <p title="Enter See Details" class="details_btn text-teal-500 font-bold cursor-pointer">Details <i class="fa-solid fa-angle-up text-amber-500 details_icon"></i></p>
+                    </div>
+                    <button price="350" class="bg-teal-600 capitalize cursor-pointer mt-[.8rem] w-[100%] text-white text-center text-sm px-3 py-2 rounded hover:bg-teal-800 transition">buy now</button>
+                </div>
+                <div class="overlay_details absolute capitalize top-[-6rem] left-0 bg-black w-[100%] h-[0] text-white transition-all duration-[.7s] flex flex-col items-center justify-center text-center text-sm">
+                    <ul class=" space-y-1 text-gray-300">
+                        <li class="underline text-xl my-[1.5rem] text-teal-500">use the course</li>
+                        <li>Figma <i class="text-lg fa-brands fa-figma text-pink-500"></i></li>
+                        <li>Sketch <i class="text-lg fa-solid fa-pencil-ruler text-purple-600"></i></li>
+                        <li>Zeplin <i class="text-lg fa-solid fa-link text-gray-500"></i></li>
+                        <li>Design Systems <i class="text-lg fa-solid fa-cubes text-yellow-600"></i></li>
+                        <li>User Testing Tools <i class="text-lg fa-solid fa-users text-blue-700"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Card-3 for app-->
+            <div class="box flex flex-col relative bg-white rounded-xl shadow-md shadow-teal-900 group overflow-hidden">
+                <img src="img/main-2.jpg" alt="Mobile App Course" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h4 class="text-xl font-semibold">Web App</h4>
+                    <p class="text-gray-600 text-sm mt-1">Master React & Next.js to build web applications.</p>
+                    <div class="flex items-center justify-between mt-3">
+                        <span class="text-amber-500 font-bold text-base">$300</span>
+                        <p title="Enter See Details" class="details_btn text-teal-500 font-bold cursor-pointer">Details <i class="fa-solid fa-angle-up text-amber-500 details_icon"></i></p>
+                    </div>                    
+                    <button price="300"class="bg-teal-600 capitalize cursor-pointer mt-[.8rem] w-[100%] text-white text-center text-sm px-3 py-2 rounded hover:bg-teal-800 transition">buy now</button>
+                </div>
+                <div class="overlay_details absolute capitalize top-[-6rem] left-0 bg-black w-[100%] h-[0] text-white transition-all duration-[.7s] flex flex-col items-center justify-center text-center text-sm">
+                    <ul class="space-y-2 text-gray-300 flex flex-wrap px-3">
+                        <li class="underline text-xl my-[1.5rem] text-teal-500 w-[100%]">use the course</li>
+                        <li class="w-[50%]">JavaScript <i class="text-lg fa-brands fa-js text-yellow-400"></i></li>
+                        <li class="w-[50%]">React.js <i class="text-lg fa-brands fa-react text-blue-500"></i></li>
+                        <li class="w-[50%]">Next.js <i class="text-lg fa-solid fa-code-branch text-gray-700"></i></li>
+                        <li class="w-[50%]">Tailwind CSS <i class="text-lg fa-brands fa-css3-alt text-blue-600"></i></li>
+                        <li class="w-[50%]">TypeScript <i class="text-lg fa-solid fa-file-code text-indigo-600"></i></li>
+                        <li class="w-[50%]">Node.js <i class="text-lg fa-brands fa-node-js text-green-600"></i></li>
+                        <li class="w-[50%]">MongoDB / PostgreSQL <i class=" fa-solid fa-database text-purple-700"></i></li>
+                        <li class="w-[50%]">Vercel / Netlify <i class="text-lg fa-solid fa-cloud text-teal-600"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <!-- offers section -->
+    <section>
+        <h3 class="sectionTitle text-center text-3xl my-[3rem] uppercase bg-amber-400 font-bold text-black w-[fit-content] mx-auto px-[2rem] rounded-bl-3xl rounded-tr-3xl transition-all duration-[1s] hover:rounded-bl-[0] hover:rounded-tr-[0] hover:rounded-br-3xl hover:rounded-tl-3xl ">offers</h3>
+        <div class="parent grid grid-cols-1 lg:grid-cols-2 gap-6 p-4 max-w-6xl mx-auto capitalize text-center mb-[3rem]" id="original">
+            <div class="box flex flex-col h-[300px] p-1 bg-amber-100 outline-3 outline-teal-700 cursor-grab" draggable="true" id="drop_1">
+                <div class="back-bg h-full text-amber-50 flex flex-col justify-center items-center space-y-3">
+                    <h4 class="text-2xl md:text-3xl font-bold text-teal-500">web site development </h4>
+                    <p class="my-3 text-xl text-amber-50">Front End <span class="text-teal-400">&</span> back end</p>
+                    <p class="text-xl"><span class="text-red-700 font-semibold">Discount</span> $650🔥</p> 
+                    <button price="650"class="capitalize my-5 px-[30px] py-[7px] text-teal-900 font-bold rounded-2xl cursor-pointer transition-all duration-[.5s] outline-3 outline-teal-950 hover:bg-teal-900 hover:outline-gray-200 hover:text-white bg-gray-200">buy now</button>
+                </div>
+            </div>
+            <!--  -->
+            <div class="box flex flex-col h-[300px] p-1 bg-amber-100 outline-3 outline-amber-500 cursor-grab" draggable="true" id="drop_2">
+                <div class="full-stack-bg h-full text-amber-50 flex flex-col justify-center items-center space-y-3">
+                    <h4 class="text-2xl md:text-3xl font-bold text-amber-500">mobile app development </h4>
+                    <p class="my-3 text-xl text-amber-50"> UI/UX <span class="text-amber-500">&</span> Mobile App <span class="text-amber-500">&</span> Web App</p>
+                    <p class="text-xl"><span class="text-red-700 font-semibold">Discount</span> $900🔥</p>
+                    <button price="900"class="capitalize my-5 px-[30px] py-[7px] text-amber-500 font-bold rounded-2xl cursor-pointer transition-all duration-[.5s] outline-3 outline-amber-500 hover:bg-amber-500 hover:outline-gray-200 hover:text-white bg-gray-200">buy now</button>
+                </div>
+            </div>
+        </div>
+        <div class="parent grid grid-cols-1 gap-6 p-5  max-w-6xl mx-auto border-2 border-amber-200 min-h-[250px] h-auto relative" id="parent">
+            <i class="fa-solid fa-xmark cursor-pointer text-3xl text-red-600 z-10 transition-all  duration-[1.2s] hover:rotate-[180deg] hover:scale-[1.3] absolute left-[50%] !hidden translate-x-[-50%] top-[-5px]" id="close_grap"></i>
+            <p class="border-2 border-dashed border-amber-100 flex justify-center items-center" id="grap_remove_text">اسحبه هنا offer لاختيار ال </p>
+        </div>
+    </section> 
+
+     <!-- cart section -->
+    <section id="content" class=" min-h-20 mt-20 text-3xl text-center font-bold group">
+        <h3 class="text-3xl w-[88%] mx-auto text-teal-700 font-bold text-left capitalize">your products cart <i class="fas fa-shopping-cart transition-all duration-[2s] text-amber-500 group-hover:skew-x-[10deg] sm:group-hover:translate-x-[40vh]  md:group-hover:translate-x-[60vh] lg:group-hover:translate-x-[90vh]"></i></h3>
+        <p id="p_content" class="bg-gray-200 min-h-[20] m-[1rem] mb-[2rem] py-10  w-[90%] mx-auto border-5 border-t-red-800 border-b-teal-800 border-l-amber-500 border-r-green-500 capitalize"></p>
+        <p id="showPrice" class="bg-tail-700 hidden mb-[2rem] mx-auto w-[90%] p-8 border-4 border-b-teal-700 text-2xl text-teal-900"></p>
+        <div class="w-[100%] flex justify-between items-center shadow-lg shadow-gray-900/50  border-gray-700 overflow-hidden group">
+            <button id="send" class="cursor-pointer hidden px-[30px] w-[50%] py-[10px]  bg-blue-500 text-xl capitalize text-amber-50">Show Price</button>
+            <button id="remove" class="cursor-pointer hidden px-[30px] w-[50%] py-[10px]  bg-red-800 text-xl capitalize text-amber-50">delete card</button>
+        </div>
+    </section>
+     <!-- icon-scrollTopBtn -->
+    <button id="scrollTopBtn"class="fixed bottom-6 right-6 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-opacity hidden z-50 cursor-pointer">
+        <i class="fas fa-chevron-up text-xl"></i>
+    </button>
+    <!-- footer -->
+    <footer class="bg-gradient-to-r from-black to-gray-900 text-gray-200 py-12 font-sans">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-center md:text-left">
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-cyan-400 text-xl mb-4 font-semibold">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="courses.html" class="hover:text-white">Courses</a></li>
+                    <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Follow Us -->
+            <div>
+                <h3 class="text-cyan-400 text-xl mb-4 font-semibold">Follow Us</h3>
+                <div class="flex space-x-4 text-2xl justify-center md:justify-start">
+                    <a href="#" class="text-teal-600 hover:text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-teal-600 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-teal-600 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <!-- About the Platform -->
+            <div>
+                <h3 class="text-cyan-400 text-xl mb-4 font-semibold">Courses Academy</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    An online learning platform offering top-quality courses in programming, design, and business. Learn at your pace, boost your skills, and level up your career.
+                </p>
+            </div>
+        </div>
+        <p class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500"> © 2025 All rights reserved - Courses Academy</p>
+    </footer>
+
+    <script src="js/courses-page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

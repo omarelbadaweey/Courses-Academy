@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/input.css" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+    <link href="src/all.css" rel="stylesheet">
+    <link rel="icon" href="img/icon.png!w700wp">
+    <title>Courses Store</title>
+  </head>
+  <body class="bg-gradient-to-r from-[#eee] to-[#777]">
+      <!-- Header -->
+      <header class="text-teal-500 bg-gradient-to-r from-black to-gray-900 px-[30px] md:px-[100px] h-20 flex justify-between items-center border-b-2 border-amber-50 ">
+        <h1 title="يمكنك تغيير العنوان🖊️" id="myHeading" contenteditable="true" class="flex flex-wrap text-2xl sm:text-3xl md:text-4xl font-bold space-x-1   ">
+          <span class="letter" style="animation-delay: 0ms">C</span>
+          <span class="letter" style="animation-delay: 100ms">o</span>
+          <span class="letter" style="animation-delay: 200ms">u</span>
+          <span class="letter" style="animation-delay: 300ms">r</span>
+          <span class="letter" style="animation-delay: 400ms">s</span>
+          <span class="letter" style="animation-delay: 500ms">e</span>
+          <span class="letter" style="animation-delay: 600ms">s</span>
+          <span class="letter" style="animation-delay: 700ms"> </span>
+          <span class="letter" style="animation-delay: 800ms">A</span>
+          <span class="letter" style="animation-delay: 900ms">c</span>
+          <span class="letter" style="animation-delay: 1000ms">a</span>
+          <span class="letter" style="animation-delay: 1100ms">d</span>
+          <span class="letter" style="animation-delay: 1200ms">e</span>
+          <span class="letter" style="animation-delay: 1200ms">m</span>
+          <span class="letter" style="animation-delay: 1200ms">y</span>
+        </h1>
+        <div class="flex items-center gap-5">
+          <a href="CoursesPage.html#content" target="_blank" title="products cart"><i class="fas fa-shopping-cart fa-solid fa-bars cursor-pointer text-2xl md:text-3xl transition-all hover:scale-[1.2] text-amber-500"></i></a>
+          <i class="fa-solid fa-bars cursor-pointer text-2xl md:text-3xl transition-all text-amber-50 hover:text-teal-400 hover:rotate-[5deg] hover:scale-[1.2]" id="open_nav"></i>
+          <i class="fa-solid fa-xmark cursor-pointer text-4xl text-red-800 !hidden transition-all  duration-[1.2s] hover:rotate-[180deg] hover:scale-[1.3]" id="close_nav"></i>
+        </div>
+      </header>
+      <!-- Main -->
+      <main class="bg-animation bg-cover md:bg-center h-[calc(100vh-5rem)] w-full flex justify-center items-center relative overflow-hidden" id="main">
+        <!-- Content -->
+        <div id="content" class=" w-[100%] h-[60%] bg-gradient-to-r from-black to-gray-900 opacity-[.8] text-amber-50 mx-auto flex flex-col justify-center items-center gap-5 shadow-lg shadow-gray-900/50 border-b-2 border-t-2 border-gray-700 overflow-hidden group">
+          <i class="fa-solid fa-door-open text-4xl md:text-5xl text-teal-600 transition-all delay-[.6s] group-hover:text-white group-hover:scale-[1.150]"></i>
+          <h3 class="text-xl md:text-3xl font-bold group-hover:text-teal-600 transition-all delay-[.6s]">Welcome To<span class="text-teal-600 md:text-5xl transition-all delay-[.5s] group-hover:text-white">_</span>Courses<span class="text-teal-600 md:text-5xl group-hover:text-white transition-all">_</span>Academy</h3>
+          <span class="w-[200px] h-[6px] bg-teal-600 rounded-[50%] mt-[20px] translate-x-full opacity-0  transition-all duration-[1s] group-hover:translate-x-0 group-hover:opacity-100 group-hover:bg-white"></span>
+        </div>
+        <!-- NavBar -->
+        <div class="hidden w-[100%] h-[60%] mx-auto border-t-2 border-b-2 border-gray-700 " id="menu">
+            <nav class="bg-gradient-to-r from-black to-gray-900 opacity-[.9] mix-w-[100%] mx-auto h-full flex flex-col justify-center items-center gap-5 shadow-lg shadow-gray-900/50 dark " >
+              <a href="CoursesPage.html" target="_blank" class="text-gray-200 text-xl font-bold w-[50%] p-2 mx-auto text-center transition-all rounded-lg  hover:bg-teal-700">Programming</a>
+              <a href="wait.html" class="text-gray-200 text-xl font-bold w-[50%] p-2 mx-auto text-center transition-all rounded-lg  hover:bg-teal-700 ">About</a>
+              <a href="wait.html" class="text-gray-200 text-xl font-bold w-[50%] p-2 mx-auto text-center transition-all rounded-lg  hover:bg-teal-700">Contact</a>
+              <a href="wait.html" class="text-gray-200 text-xl font-bold w-[50%] p-2 mx-auto text-center transition-all rounded-lg  hover:bg-teal-700">Services</a>
+              <a href="wait.html" class="text-gray-200 text-xl font-bold w-[50%] p-2 mx-auto text-center transition-all rounded-lg  hover:bg-teal-700">Portfolio</a>
+            </nav>
+        </div>
+      </main>
+      <!-- opinions & evelauations -->
+      <section dir="rtl">
+        <h2 class="text-3xl text-teal-800 text-center font-bold my-[50px] capitalize">أراء أهم العملاء</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-4 max-w-6xl mx-auto gap-6 capitalize">
+          <div class="card bg-gray-200 p-6 rounded-2xl h-[200px] mb-[20px]">
+            <img src="img/per-1.png" alt="" class="w-[80px] h-[80px] rounded-full mx-auto mt-[-50px] object-cover">
+            <h3 class="text-2xl text-teal-700 font-semibold my-[10px] text-center">حسام البسيونى</h3>
+            <p class="mb-[15px] text-center">عميل معفن بس داخل واسطه عشان صاحبى</p>
+             <p>⭐⭐⭐</p>
+          </div>
+          <div class="card bg-gray-200 p-6 rounded-2xl h-[200px] mb-[20px]">
+            <img src="img/per-2.jpg" alt="" class="w-[80px] h-[80px] rounded-full mx-auto mt-[-50px] object-cover">
+            <h3 class="text-2xl text-teal-700 font-semibold my-[10px] text-center">عبد الفتاح السيسى</h3>
+            <p class="mb-[15px] text-center">حضره الرئيس لازم يكون مميز غير كدا هتحبس </p>
+             <p>⭐⭐⭐⭐</p>
+          </div>
+          <div class="card bg-gray-200 p-6 rounded-2xl h-[200px] mb-[20px]">
+            <img src="img/per-3.jpg" alt="" class="w-[80px] h-[80px] rounded-full mx-auto mt-[-50px] object-cover">
+            <h3 class="text-2xl text-teal-700 font-semibold my-[10px] text-center">بهجوتى صابر </h3>
+            <p class="mb-[15px] text-center">اهم عميل عندى حبيب قلبى ده❤️</p>
+            <p>⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+      </section>
+      <!-- icon-scrollTopBtn -->
+      <button id="scrollTopBtn"class="fixed bottom-6 right-6 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-opacity hidden z-50 cursor-pointer">
+          <i class="fas fa-chevron-up text-xl"></i>
+      </button>
+      <!-- footer -->
+      <footer class="bg-gradient-to-r from-black to-gray-900 text-gray-200 py-12 font-sans mt-[50px]">
+          <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-cyan-400 text-xl mb-4 font-semibold">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                  <li><a href="courses.html" class="hover:text-white">Courses</a></li>
+                  <li><a href="about.html" class="hover:text-white">About Us</a></li>
+                  <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Follow Us -->
+            <div>
+                <h3 class="text-cyan-400 text-xl mb-4 font-semibold">Follow Us</h3>
+                <div class="flex space-x-4 text-2xl">
+                  <a href="#" class="text-teal-600 hover:text-white"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="text-teal-600 hover:text-white"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="text-teal-600 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <!-- About the Platform -->
+            <div>
+                <h3 class="text-cyan-400 text-xl mb-4 font-semibold">Courses Academy</h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  An online learning platform offering top-quality courses in programming, design, and business. Learn at your pace, boost your skills, and level up your career.
+                </p>
+              </div>
+            </div>
+          <p class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500"> © 2025 All rights reserved - Courses Academy</p>
+      </footer>
+      <script src="js/main.js"></script>
+  </body>
+</html>
